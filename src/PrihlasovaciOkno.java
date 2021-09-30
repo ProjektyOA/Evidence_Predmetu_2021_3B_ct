@@ -28,7 +28,18 @@ public class PrihlasovaciOkno extends javax.swing.JFrame {
 
         levyPanel = new javax.swing.JPanel();
         infoPanel = new javax.swing.JPanel();
+        jPanel2 = new javax.swing.JPanel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
         loginPanel = new javax.swing.JPanel();
+        buttonPanel = new javax.swing.JPanel();
+        jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
+        userPanel = new javax.swing.JPanel();
+        jLabel3 = new javax.swing.JLabel();
+        jTextField1 = new javax.swing.JTextField();
+        jLabel4 = new javax.swing.JLabel();
+        jPasswordField1 = new javax.swing.JPasswordField();
         jPanel1 = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -36,29 +47,63 @@ public class PrihlasovaciOkno extends javax.swing.JFrame {
 
         levyPanel.setLayout(new java.awt.GridLayout(2, 1, 0, 10));
 
-        javax.swing.GroupLayout infoPanelLayout = new javax.swing.GroupLayout(infoPanel);
-        infoPanel.setLayout(infoPanelLayout);
-        infoPanelLayout.setHorizontalGroup(
-            infoPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 338, Short.MAX_VALUE)
+        infoPanel.setLayout(new java.awt.GridLayout(2, 1, 0, 5));
+
+        jLabel2.setText("logo");
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel2)
+                .addContainerGap(308, Short.MAX_VALUE))
         );
-        infoPanelLayout.setVerticalGroup(
-            infoPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 181, Short.MAX_VALUE)
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel2)
+                .addContainerGap(63, Short.MAX_VALUE))
         );
+
+        infoPanel.add(jPanel2);
+
+        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setText("Název aplikace");
+        infoPanel.add(jLabel1);
 
         levyPanel.add(infoPanel);
 
-        javax.swing.GroupLayout loginPanelLayout = new javax.swing.GroupLayout(loginPanel);
-        loginPanel.setLayout(loginPanelLayout);
-        loginPanelLayout.setHorizontalGroup(
-            loginPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 338, Short.MAX_VALUE)
-        );
-        loginPanelLayout.setVerticalGroup(
-            loginPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 181, Short.MAX_VALUE)
-        );
+        loginPanel.setLayout(new java.awt.BorderLayout());
+
+        buttonPanel.setLayout(new java.awt.GridLayout());
+
+        jButton1.setText("Log in");
+        buttonPanel.add(jButton1);
+
+        jButton2.setText("Sign up");
+        buttonPanel.add(jButton2);
+
+        loginPanel.add(buttonPanel, java.awt.BorderLayout.PAGE_END);
+
+        userPanel.setLayout(new java.awt.GridLayout(4, 1));
+
+        jLabel3.setText("User name");
+        userPanel.add(jLabel3);
+
+        jTextField1.setText("jTextField1");
+        userPanel.add(jTextField1);
+
+        jLabel4.setText("Password");
+        userPanel.add(jLabel4);
+
+        jPasswordField1.setText("jPasswordField1");
+        userPanel.add(jPasswordField1);
+
+        loginPanel.add(userPanel, java.awt.BorderLayout.CENTER);
 
         levyPanel.add(loginPanel);
 
@@ -118,9 +163,20 @@ public class PrihlasovaciOkno extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JPanel buttonPanel;
     private javax.swing.JPanel infoPanel;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPasswordField jPasswordField1;
+    private javax.swing.JTextField jTextField1;
     private javax.swing.JPanel levyPanel;
     private javax.swing.JPanel loginPanel;
+    private javax.swing.JPanel userPanel;
     // End of variables declaration//GEN-END:variables
 }
